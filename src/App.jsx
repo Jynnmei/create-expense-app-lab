@@ -1,11 +1,8 @@
 import React from "react";
+import Form from "./components/Form";
 
 function App() {
-  return (
-    <div>
-      <h2>GA SEB</h2>
-    </div>
-  );
+  return <Form />;
 }
 
 export default App;
