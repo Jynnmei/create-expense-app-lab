@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Label from "./Label";
 import Input from "./Input";
-import "./Form.css";
 import Button from "./Button";
 
 const Form = (props) => {
