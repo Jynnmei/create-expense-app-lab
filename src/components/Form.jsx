@@ -4,12 +4,6 @@ import Input from "./Input";
 import Button from "./Button";
 
 const Form = (props) => {
-  // const [formData, setFormData] = useState({
-  //   item:'',
-  //   price:'',
-  //   date:'',
-  // });
-
   const [item, setItem] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
