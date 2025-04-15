@@ -4,7 +4,13 @@ import Input from "./Input";
 import "./Form.css";
 import Button from "./Button";
 
-const Form = () => {
+const Form = (props) => {
+  // const [formData, setFormData] = useState({
+  //   item:'',
+  //   price:'',
+  //   date:'',
+  // });
+
   const [item, setItem] = useState("");
   const [price, setPrice] = useState("");
   const [date, setDate] = useState("");
@@ -23,7 +29,12 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    props.onSubmit({ item, price, date });
     console.log("You clicked submit.");
+
+    setItem("");
+    setPrice("");
+    setDate("");
   };
 
   return (
@@ -54,7 +65,7 @@ const Form = () => {
           onChange={handleDateChange}
         ></Input>
       </div>
-      <Button className="col-md-2" onClick={handleSubmit}>
+      <Button className="btn-primary" onClick={handleSubmit}>
         Submit
       </Button>
     </section>

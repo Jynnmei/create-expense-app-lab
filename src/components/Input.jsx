@@ -4,7 +4,7 @@ const Input = (props) => {
   return (
     <input
       className={props.className}
-      value={props.item}
+      value={props.value}
       onChange={props.onChange}
     ></input>
   );
